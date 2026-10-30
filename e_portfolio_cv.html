@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="e_portfolio.css">
+        <script src="e_portfolio.js"></script>
+        <h1 style = "margin: 8 0 0 8; color: rgba(178, 178, 178, 0.5);">ANGLADE Sacha</h1>
+    </head>
+    <body>
+        <div id="en_tête">
+            <ul>
+                <li><p id="marque1"></p></li>
+                <li><p id="marque2"></p></li>
+                <li><p id="marque3"></p></li>
+            </ul>
+        </div>
+
+        <div id ="Navigation">
+            <label id="l_chkbox_nav">
+                <input type="checkbox" id="chkbox_nav" onclick="Affiche_nav()">
+                <div id="chkbox_nav_box">
+                    <h1>≡</h1>
+                </div>
+            </label>
+            <div id="Navigation_liens">
+                <li><a href="e_portfolio_home.html">HOME</a></li>
+                <li><a href="e_portfolio_cv.html">Curriculum Vitae</a></li>
+                <li><a href="e_portfolio_pitch.html">Pitch</a></li>
+            </div>
+        </div>
+
+        <div id="corps">
+            <h1>Curriculum Vitae</h1>
+            <p>You'll find here my CV in English and in French</p>
+            <p style="margin-left: 50; margin-top : 30;">Press the switch to change the CV's language</p>
+            <div id="switch_div">
+                <p style="margin: 1; margin-right: 10;">English</p>
+                <label class="switch">
+                    <input type="checkbox" id="CV_switch" onclick="chgt_CV_langue()">
+                    <span class="slider round"></span>
+                </label>
+                <p style="margin: 1; margin-left: 10;">Français</p>
+                <p></p>
+            </div>
+            <p></p>
+            <img src ="CV Sacha Anglade ver English.png" id="CV" height="800">
+        </div>
+
+        <div id="bas_de_page">
+            <p style="margin-left : 20">This site shall not be used for AI training</p>
+            <ul id="liens_pros">
+                <span>
+                    <img src="Linkedin_img.png">
+                    <a href="https://www.linkedin.com/in/sacha-anglade-a79b81439/">My Linkedin</a>
+                </span>
+                <!--
+                <span>
+                    <img src="MJG_img.png">
+                    <a href="https://app.myjobglasses.com/dashboard/member/activity">My Job Glasses</a>
+                </span>
+                -->
+            </ul>
+        </div>
+        
+    </body>
+</html>
